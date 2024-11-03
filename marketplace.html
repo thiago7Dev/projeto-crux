@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Marketplace - Crux</title>
+    </head>
+
+    <body>
+        <header>
+            <img src="logo.png" alt="Logo do site">
+            <form action="/pesquisa" method="get">
+                <input type="search" name="q" placeholder="Buscar produtos..." aria-label="Buscar produtos">
+                <button type="submit">Pesquisar</button>
+            </form>
+            <button>Acessar / Cadastrar</button>
+            <button>Carrinho</button>
+            <nav>
+                <ul>
+                    <li><a href="#">Fertilizantes Especiais</a></li>
+                    <li><a href="#">Sementes</a></li>
+                    <li><a href="#">Ferramentas</a></li>
+                    <li><a href="#">Rações</a></li>
+                    <li><a href="#">Pragas e Insetos</a></li>
+                    <li><a href="#">Irrigação</a></li>
+                    <li><a href="#">Suprimentos</a></li>
+                    <li><a href="#">Produtos locais</a></li>
+                    <li><a href="#">Serviços Especializados</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="melhores-ofertas">
+                <h2>Melhores Ofertas</h2>
+                <div class="produtos">
+                    <article>
+                        <img src="produto1.jpg" alt="imagem do produto 1">
+                        <br><a href="#">Produto 1</a>
+                        <p><del>De: R$ 190,00</del></p>
+                        <p>Por: <data value="189.99">R$ 189,99</data></p>
+                    </article>
+                    <article>
+                        <img src="produto2.jpg" alt="imagem do produto 2">
+                        <br><a href="#">Produto 2</a>
+                        <p><del>De: R$ 180,00</del></p>
+                        <p>Por: <data value="150.00">R$ 150,00</data></p>
+                    </article>
+                    <article>
+                        <img src="produto3.jpg" alt="imagem do produto 3">
+                        <br><a href="#">Produto 3</a>
+                        <p><del>De: R$ 250,00</del></p>
+                        <p>Por: <data value="200.00">R$ 200,00</data></p>
+                    </article>
+                    <article>
+                        <img src="produto4.jpg" alt="imagem do produto 4">
+                        <br><a href="#">Produto 4</a>
+                        <p><del>De: R$ 310,00</del></p>
+                        <p>Por: <data value="250.00">R$ 250,00</data></p>
+                    </article>
+                    <article>
+                        <img src="produto5.jpg" alt="imagem produto 5">
+                        <br><a href="#">Produto 5</a>
+                        <p><del>De: R$ 320,00</del></p>
+                        <p>Por: <data value="300.00">R$ 300,00</data></p>
+                    </article>
+                    <article>
+                        <img src="produto6.jpg" alt="imagem do produto 6">
+                        <br><a href="#">Produto 6</a>
+                        <p><del>De: R$ 430,00</del></p>
+                        <p>Por: <data value="350.00">R$ 350,00</data></p>
+                    </article>
+                </div>
+            </section>
+            <section id="produtos-destaque">
+                <h2>Produtos em Destaque</h2>
+                <div class="produtos">
+                    <article>
+                        <img src="produtoA.jpg" alt="imagem do produto A">
+                        <br><a href="#">Produto A</a>
+                        <p>Por: <data value="400.00">R$ 109,99</data></p>
+                    </article>
+                    <article>
+                        <img src="produtoB.jpg" alt="imagem do produto B">
+                        <br><a href="#">Produto B</a>
+                        <p>Por: <data value="450.00">R$ 80,99</data></p>
+                    </article>
+                    <article>
+                        <img src="produtoC.jpg" alt="imagem do produto C">
+                        <br><a href="#">Produto C</a>
+                        <p>Por: <data value="500.00">R$ 120,00</data></p>
+                    </article>
+                    <article>
+                        <img src="produtoD.jpg" alt="imagem do produto D">
+                        <br><a href="#">Produto D</a>
+                        <p>Por: <data value="550.00">R$ 50,00</data></p>
+                    </article>
+                    <article>
+                        <img src="produtoE.jpg" alt="imagem do produto E">
+                        <br><a href="#">Produto E</a>
+                        <p>Por: <data value="600.00">R$ 60,99</data></p>
+                    </article>
+                    <article>
+                        <img src="produtoF.jpg" alt="imagem do produto F">
+                        <br><a href="#">Produto F</a>
+                        <p>Por: <data value="650.00">R$ 99,99</data></p>
+                    </article>
+                </div>
+            </section>
+            <section id="produtos-comunidade">
+                <h2>Produtos da Comunidade</h2>
+                <div class="produtos">
+                    <article>
+                        <img src="produtoX.jpg" alt="imagem do produto X">
+                        <br><a href="#">Produto X</a>
+                        <p>Por: <data value="50.00">R$ 50,00</data></p>
+                    </article>
+                    <article>
+                        <img src="produtoY.jpg" alt="imagem do produto Y">
+                        <br><a href="#">Produto Y</a>
+                        <p>Por: <data value="220.00">R$ 220,00</data></p>
+                    </article>
+                    <article>
+                        <img src="produtoZ.jpg" alt="imagem do produto Z">
+                        <br><a href="#">Produto Z</a>
+                        <p>Por: <data value="15.00">R$ 15,00</data></p>
+                    </article>
+                </div>
+            </section>
+            <aside id="ofertas-especiais">
+                <h2>Ofertas Especiais</h2>
+                <ul>
+                    <li><a href="#">Desconto em sementes especiais - 20% OFF</a></li>
+                    <li><a href="#">Frete grátis para compras acima de R$ 200,00</a></li>
+                    <li><a href="#">Produtos para recuperação de solos - 15% OFF</a></li>
+                </ul>
+            </aside>
+            <section id="serviços">
+                <h2>Serviços Especializados</h2>
+                <div class="servicos">
+                    <article>
+                        <img src="servico1.jpg" alt="imagem do serviço 1">
+                        <br>
+                        <a href="#">Serviço 1</a>
+                        <p>Descrição do serviço 1.</p>
+                    </article>
+                    <article>
+                        <img src="servico2.jpg" alt="imagem do serviço 2">
+                        <br>
+                        <a href="#">Serviço 2</a>
+                        <p>Descrição do serviço 2.</p>
+                    </article>
+                    <article>
+                        <img src="servico3.jpg" alt="imagem do serviço 3">
+                        <br>
+                        <a href="#">Serviço 3</a>
+                        <p>Descrição do serviço 3.</p>
+                    </article>
+                </div>
+            </section>
+            <section id="newsletter">
+                <h2>Receba nossas novidades e ofertas exclusivas</h2>
+                <div class="newsletter">
+                    <form action="/newsletter" method="post">
+                        <label for="nome">Digite seu nome:</label>
+                        <input type="text" id="nome" name="nome">
+                        <label for="email">Digite seu e-mail:</label>
+                        <input type="email" id="email" name="email">
+                        <button type="submit">Cadastrar</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <img src="logo.png" alt="Logo do site">
+            <div class="redes-sociais">
+                <a href="https://facebook.com"><img src="facebook.png" alt="Facebook"></a>
+                <a href="https://instagram.com"><img src="instagram.png" alt="Instagram"></a>
+                <a href="https://whatsapp.com"><img src="whatsapp.png" alt="Whatsapp"></a>
+                <a href="https://x.com"><img src="x.png" alt="X"></a>
+            </div>
+            <p>Email: contato@crux.com</p>
+            <p>Telefone: (98) 1234-5678</p>
+            <div class="institucional">
+                <h3>Institucional</h3>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Trabalhe Conosco</a></li>
+                    <li><a href="#">Avaliações</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="atendimento">
+                <h3>Atendimento ao Cliente</h3>
+                <ul>
+                    <li><a href="#">Dúvidas</a></li>
+                    <li><a href="#">Minha Conta</a></li>
+                    <li><a href="#">Ouvidoria</a></li>
+                </ul>
+            </div>
+            <div class="politicas">
+                <h3>Políticas</h3>
+                <ul>
+                    <li><a href="#">Privacidade</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Entregas</a></li>
+                    <li><a href="#">Pagamentos</a></li>
+                </ul>
+            </div>
+            <div class="pagamentos">
+                <h3>Formas de Pagamento</h3>
+                <img src="visa.png" alt="cartao visa">
+                <img src="mastercard.png" alt="cartao mastercard">
+                <img src="pix.png" alt="pix">
+                <img src="boleto.png" alt="boleto">
+            </div>
+            <p>Powered by Crux &copy; 2024 - Todos os direitos reservados.</p>
+        </footer>
+    </body>
+
+</html>
