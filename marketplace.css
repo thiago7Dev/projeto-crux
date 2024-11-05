@@ -15,7 +15,6 @@ h2 {
 }
 header {
     color: #F2F2F2;
-    padding: 10px 0;
 }
 
 body {
@@ -28,7 +27,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 900px;
     margin: 0 auto;
     padding: 0 10px;
 }
