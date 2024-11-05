@@ -12,17 +12,23 @@
         <!-- Início do cabeçalho -->
         <header>
             <!-- Logo do site -->
-            <img src="logo.png" alt="Logo do site">
-            <!-- Formulário de busca -->
-            <form action="/pesquisa" method="get">
-                <input type="search" name="q" placeholder="Buscar produtos..." aria-label="Buscar produtos">
-                <button type="submit">Pesquisar</button>
-            </form>
-            <!-- Botões de acesso e carrinho -->
-            <button>Acessar / Cadastrar</button>
-            <button>Carrinho</button>
+            <div class="menu-topo">
+                <div class="menu-logo">
+                    <img src="logo.png" alt="Logo do site">
+                </div>
+                <!-- Formulário de busca -->
+                <form action="/pesquisa" method="get" class="barra-pesquisa">
+                    <input type="search" name="q" placeholder="Buscar produtos..." aria-label="Buscar produtos">
+                    <button type="submit">Pesquisar</button>
+                </form>
+                <!-- Botões de acesso e carrinho -->
+                <div class="acessar-carrinho">
+                    <button>Acessar / Cadastrar</button>
+                    <button>Carrinho</button>
+                </div>
+            </div>
             <!-- Menu de navegação -->
-            <nav>
+            <nav class="menu-nav">
                 <ul>
                     <li><a href="#">Fertilizantes Especiais</a></li>
                     <li><a href="#">Sementes</a></li>

@@ -1,0 +1,60 @@
+/* Aqui vamos definir o estilo do nosso marketplace */
+/* Explore a paleta de cores (#547FB0, #4EB1E7, #7AD3DC, #F2F2F2, #262626) e tipografia (Títulos: Intro; Sub-títulos: Roboto; Texto: Lato) para criar um design coerente com a temática. Utilize unidades relativas nas medidas. Organize o código CSS para ser legível e fácil de entender. Teste o design em diferentes navegadores e dispositivos. */
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    color: #F2F2F2;
+    padding: 10px 0;
+}
+
+.menu-topo {
+    background: #547FB0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.menu-logo {
+    font-family: 'Intro', sans-serif;
+    font-size: 1.5rem;
+    flex: 1;
+}
+
+.barra-pesquisa {
+    flex: 1;
+}
+
+.acessar-carrinho {
+    flex: 1;
+    text-align: right;
+}
+
+.menu-nav {
+    background: #4EB1E7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+.menu-nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    flex: 1;
+}
+.menu-nav a {
+    color: #F2F2F2;
+    text-decoration: none;
+    padding: 10px;
+    font-size: .80em;
+}
