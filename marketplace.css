@@ -484,7 +484,17 @@ body {
     background-color: var(--cor-secundaria);
 }
 
+/* Responsividade da seção newsletter*/
 
+@media (max-width: 768px) {
+    .form-newsletter {
+        flex-direction: column;
+    }
+
+    .input-newsletter {
+        margin-bottom: 10px;
+    }
+}
 
 /* Estilização do footer */
 
