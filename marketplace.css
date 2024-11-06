@@ -1,6 +1,21 @@
 /* Aqui vamos definir o estilo do nosso marketplace */
 /* Explore a paleta de cores (#547FB0, #4EB1E7, #7AD3DC, #F2F2F2, #262626) e tipografia (Títulos: Intro; Sub-títulos: Roboto; Texto: Lato) para criar um design coerente com a temática. Utilize unidades relativas nas medidas. Organize o código CSS para ser legível e fácil de entender. Teste o design em diferentes navegadores e dispositivos. */
 
+/* Import das fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*Definição de variáveis de estilo*/
+:root {
+    --cor-principal: #4EB1E7;  /* Azul meio termo*/ 
+    --cor-secundaria: #7AD3DC; /* Azul claro*/
+    --cor-fundo: #547FAF;      /* Azul escuro*/
+    --cor-texto: #333333;      /* Cor do texto */
+    --fonte-titulo: 'Arial', sans-serif;
+    --fonte-sub-titulo: 'Roboto';
+    --fonte-texto: 'lato';
+}
 /* Reset CSS */
 * {
     margin: 0;
