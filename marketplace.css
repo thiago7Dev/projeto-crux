@@ -111,6 +111,10 @@ body {
     background-color: var(--cor-fundo);
     /* Fundo escuro */
     margin-top: 10px;
+    border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .nav-lista {
