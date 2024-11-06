@@ -363,3 +363,79 @@ body {
 }
 
 /* Estilização das ofertas especiais e dos serviços especializados */
+
+.grid-ofertas-servicos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Ajusta a proporção entre aside e section */
+    gap: 20px;
+    padding: 2rem;
+    background-color: var(--cor-fundo-branco);
+}
+
+.ofertas-especiais,
+.servicos {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ofertas-especiais h2,
+.servicos h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 1.5rem;
+    color: var(--cor-principal);
+    margin-bottom: 16px;
+}
+
+.oferta-item,
+.servico-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--cor-secundaria);
+}
+
+.oferta-item:last-child,
+.servico-item:last-child {
+    border-bottom: none;
+}
+
+.oferta-item a,
+.servico-item a {
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto);
+}
+
+.oferta-item span,
+.servico-item button {
+    font-family: var(--fonte-sub-titulo);
+    color: var(--cor-principal);
+}
+
+.servico-item button {
+    background-color: var(--cor-secundaria);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.servico-item button:hover {
+    background-color: var(--cor-principal);
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+        /* O grid se adapta para uma coluna */
+    }
+
+    .ofertas-especiais,
+    .servicos {
+        margin-bottom: 20px;
+    }
+}
