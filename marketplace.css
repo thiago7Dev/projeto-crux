@@ -1,5 +1,5 @@
 /* Aqui vamos definir o estilo do nosso marketplace */
-/* Explore a paleta de cores (#547FB0, #4EB1E7, #7AD3DC, #F2F2F2, #262626) e tipografia (Títulos: Intro; Sub-títulos: Roboto; Texto: Lato) para criar um design coerente com a temática. Utilize unidades relativas nas medidas. Organize o código CSS para ser legível e fácil de entender. Teste o design em diferentes navegadores e dispositivos. */
+/* Explore a paleta de cores (#547FB0, #4EB1E7, #7AD3DC, #F2F2F2, #333333) e tipografia (Títulos: Inter; Sub-títulos: Roboto; Texto: Lato) para criar um design coerente com a temática. Utilize unidades relativas nas medidas. Organize o código CSS para ser legível e fácil de entender. Teste o design em diferentes navegadores e dispositivos. */
 
 /* Import das fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
@@ -10,9 +10,10 @@
 :root {
     --cor-principal: #4EB1E7;  /* Azul meio termo*/ 
     --cor-secundaria: #7AD3DC; /* Azul claro*/
-    --cor-fundo: #547FAF;      /* Azul escuro*/
-    --cor-texto: #333333;      /* Cor do texto */
-    --fonte-titulo: 'Arial', sans-serif;
+    --cor-fundo: #547FB0;      /* Azul escuro*/
+    --cor-texto: #333333;     /* Cor do texto */
+    --cor-fundo-branco: #F2F2F2;  /* Cor de fundo branco */    
+    --fonte-titulo: 'Inter';
     --fonte-sub-titulo: 'Roboto';
     --fonte-texto: 'lato';
 }
@@ -23,22 +24,22 @@
     box-sizing: border-box;
 }
 h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--fonte-titulo);
     font-size: 1.5rem;
-    color: #262626;
+    color: var(--cor-texto);
     margin: 10px 0;
 }
 header {
-    color: #F2F2F2;
+    color: var(--cor-fundo-branco);
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    background: #F2F2F2;
+    font-family: var(--fonte-texto);
+    background: var(--cor-fundo-branco);
 }
 
 .menu-topo {
-    background: #547FB0;
+    background: var(--cor-fundo);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,7 +48,7 @@ body {
 }
 
 .menu-logo {
-    font-family: 'Intro', sans-serif;
+    font-family: var(--fonte-titulo);
     font-size: 1.5rem;
     flex: 1;
 }
@@ -62,7 +63,7 @@ body {
 }
 
 .menu-nav {
-    background: #4EB1E7;
+    background: var(--cor-principal);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,7 +77,7 @@ body {
     flex: 1;
 }
 .menu-nav a {
-    color: #F2F2F2;
+    color: var(--cor-fundo-branco);
     text-decoration: none;
     padding: 10px;
     font-size: .80em;
