@@ -10,130 +10,126 @@
 
     <body>
         <!-- Início do cabeçalho -->
-        <header>
-            <!-- Logo do site -->
+        <header class="header">
             <div class="menu-topo">
                 <div class="menu-logo">
-                    <img src="imagens/AgruHUB-logo2.svg" width="40%" alt="Logo do site">
+                    <img src="imagens/AgruHUB-logo2.svg" alt="Logo do site" class="logo">
                 </div>
-                <!-- Formulário de busca -->
                 <form action="/pesquisa" method="get" class="barra-pesquisa">
-                    <input type="search" name="q" placeholder="Buscar produtos..." aria-label="Buscar produtos">
-                    <button type="submit">Pesquisar</button>
+                    <input type="search" name="q" placeholder="Buscar produtos..." aria-label="Buscar produtos"
+                        class="input-pesquisa">
+                    <button type="submit" class="btn-pesquisa">Pesquisar</button>
                 </form>
-                <!-- Botões de acesso e carrinho -->
                 <div class="acessar-carrinho">
-                    <button>Acessar / Cadastrar</button>
-                    <button>Carrinho</button>
+                    <button class="btn-acessar">Acessar / Cadastrar</button>
+                    <button class="btn-carrinho">Carrinho</button>
                 </div>
             </div>
-            <!-- Menu de navegação -->
             <nav class="menu-nav">
-                <ul>
-                    <li><a href="#">Fertilizantes Especiais</a></li>
-                    <li><a href="#">Sementes</a></li>
-                    <li><a href="#">Ferramentas</a></li>
-                    <li><a href="#">Rações</a></li>
-                    <li><a href="#">Pragas e Insetos</a></li>
-                    <li><a href="#">Irrigação</a></li>
-                    <li><a href="#">Suprimentos</a></li>
-                    <li><a href="#">Produtos locais</a></li>
-                    <li><a href="#">Serviços Especializados</a></li>
+                <ul class="nav-lista">
+                    <li><a href="#" class="nav-item">Fertilizantes Especiais</a></li>
+                    <li><a href="#" class="nav-item">Sementes</a></li>
+                    <li><a href="#" class="nav-item">Ferramentas</a></li>
+                    <li><a href="#" class="nav-item">Rações</a></li>
+                    <li><a href="#" class="nav-item">Pragas e Insetos</a></li>
+                    <li><a href="#" class="nav-item">Irrigação</a></li>
+                    <li><a href="#" class="nav-item">Suprimentos</a></li>
+                    <li><a href="#" class="nav-item">Produtos locais</a></li>
+                    <li><a href="#" class="nav-item">Serviços Especializados</a></li>
                 </ul>
             </nav>
         </header>
         <!-- Fim do cabeçalho -->
         <main>
             <!-- Seção de Melhores Ofertas - Mostra produtos com descontos especiais -->
-            <section id="melhores-ofertas">
-                <h2>Melhores Ofertas</h2>
+            <section class="melhores-ofertas">
+                <h2 class="titulo-secao">Melhores Ofertas</h2>
                 <!-- Container para os produtos em oferta -->
-                <div class="produtos">
+                <div class="grid-ofertas">
                     <!-- Produto 1 com preço original e preço com desconto -->
-                    <article>
-                        <img src="produto1.jpg" alt="imagem do produto 1">
-                        <br><a href="#">Produto 1</a>
-                        <p><del>De: R$ 190,00</del></p>
-                        <p>Por: <data value="189.99">R$ 189,99</data></p>
+                    <article class="card-oferta">
+                        <img src="imagens/produtos/adubo_especial.png" alt="imagem do produto 1" class="imagem-produto">
+                        <a href="#" class="nome-produto">Adubo especial 15Kg</a>
+                        <p class="descricao-produto">Adubo orgânico sustentável que fortalece suas plantas e melhora a
+                            qualidade do solo.</p>
+                        <p class="preco-original"><del>De: R$ 190,00</del></p>
+                        <p class="preco-promocional">Por: <data value="189.99">R$ 189,99</data></p>
                     </article>
                     <!-- Produto 2 com preço original e preço com desconto -->
-                    <article>
-                        <img src="produto2.jpg" alt="imagem do produto 2">
-                        <br><a href="#">Produto 2</a>
-                        <p><del>De: R$ 180,00</del></p>
-                        <p>Por: <data value="150.00">R$ 150,00</data></p>
+                    <article class="card-oferta">
+                        <img src="produto2.jpg" alt="imagem do produto 2" class="imagem-produto">
+                        <a href="#" class="nome-produto">Produto 2</a>
+                        <p class="descricao-produto">Descrição curta do produto com detalhes.</p>
+                        <p class="preco-original"><del>De: R$ 180,00</del></p>
+                        <p class="preco-promocional">Por: <data value="150.00">R$ 150,00</data></p>
                     </article>
                     <!-- Produto 3 com preço original e preço com desconto -->
-                    <article>
-                        <img src="produto3.jpg" alt="imagem do produto 3">
-                        <br><a href="#">Produto 3</a>
-                        <p><del>De: R$ 250,00</del></p>
-                        <p>Por: <data value="200.00">R$ 200,00</data></p>
+                    <article class="card-oferta">
+                        <img src="produto3.jpg" alt="imagem do produto 3" class="imagem-produto">
+                        <a href="#" class="nome-produto">Produto 3</a>
+                        <p class="descricao-produto">Descrição curta do produto com detalhes.</p>
+                        <p class="preco-original"><del>De: R$ 250,00</del></p>
+                        <p class="preco-promocional">Por: <data value="200.00">R$ 200,00</data></p>
                     </article>
                     <!-- Produto 4 com preço original e preço com desconto -->
-                    <article>
-                        <img src="produto4.jpg" alt="imagem do produto 4">
-                        <br><a href="#">Produto 4</a>
-                        <p><del>De: R$ 310,00</del></p>
-                        <p>Por: <data value="250.00">R$ 250,00</data></p>
+                    <article class="card-oferta">
+                        <img src="produto4.jpg" alt="imagem do produto 4" class="imagem-produto">
+                        <a href="#" class="nome-produto">Produto 4</a>
+                        <p class="descricao-produto">Descrição curta do produto com detalhes.</p>
+                        <p class="preco-original"><del>De: R$ 310,00</del></p>
+                        <p class="preco-promocional">Por: <data value="250.00">R$ 250,00</data></p>
                     </article>
                     <!-- Produto 5 com preço original e preço com desconto -->
-                    <article>
-                        <img src="produto5.jpg" alt="imagem produto 5">
-                        <br><a href="#">Produto 5</a>
-                        <p><del>De: R$ 320,00</del></p>
-                        <p>Por: <data value="300.00">R$ 300,00</data></p>
-                    </article>
-                    <!-- Produto 6 com preço original e preço com desconto -->
-                    <article>
-                        <img src="produto6.jpg" alt="imagem do produto 6">
-                        <br><a href="#">Produto 6</a>
-                        <p><del>De: R$ 430,00</del></p>
-                        <p>Por: <data value="350.00">R$ 350,00</data></p>
+                    <article class="card-oferta">
+                        <img src="produto5.jpg" alt="imagem produto 5" class="imagem-produto">
+                        <a href="#" class="nome-produto">Produto 5</a>
+                        <p class="descricao-produto">Descrição curta do produto com detalhes.</p>
+                        <p class="preco-original"><del>De: R$ 320,00</del></p>
+                        <p class="preco-promocional">Por: <data value="300.00">R$ 300,00</data></p>
                     </article>
                 </div>
             </section>
             <!-- Seção de Produtos em Destaque - Mostra os produtos mais populares e mais vendidos -->
-            <section id="produtos-destaque">
-                <h2>Produtos em Destaque</h2>
+            <section class="produtos-destaque">
+                <h2 class="titulo-secao">Produtos em Destaque</h2>
                 <!-- Container para os produtos em destaque -->
-                <div class="produtos">
+                <div class="grid-destaque">
                     <!-- Produto A com preço -->
-                    <article>
-                        <img src="produtoA.jpg" alt="imagem do produto A">
-                        <br><a href="#">Produto A</a>
-                        <p>Por: <data value="400.00">R$ 109,99</data></p>
+                    <article class="card-destaque">
+                        <img src="produtoA.jpg" alt="imagem do produto A" class="imagem-produto">
+                        <a href="#" class="nome-produto">Produto</a>
+                        <a href="#" class="descricao-produto">Descrição curta do produto com detalhes.</a>
+                        <p class="preco-produto">Por: <data value="400.00">R$ 109,99</data></p>
                     </article>
                     <!-- Produto B com preço -->
-                    <article>
-                        <img src="produtoB.jpg" alt="imagem do produto B">
-                        <br><a href="#">Produto B</a>
-                        <p>Por: <data value="450.00">R$ 80,99</data></p>
+                    <article class="card-destaque">
+                        <img src="produtoB.jpg" alt="imagem do produto B" class="imagem-produto">
+                        <a href="#" class="nome-produto">Produto</a>
+                        <a href="#">Produto B</a>
+                        <p class="preco-produto">Por: <data value="450.00">R$ 80,99</data></p>
                     </article>
                     <!-- Produto C com preço -->
-                    <article>
-                        <img src="produtoC.jpg" alt="imagem do produto C">
-                        <br><a href="#">Produto C</a>
-                        <p>Por: <data value="500.00">R$ 120,00</data></p>
+                    <article class="card-destaque">
+                        <img src="produtoC.jpg" alt="imagem do produto C" class="imagem-produto">
+                        <a href="#" class="nome-produto">Produto</a>
+                        <a href="#">Produto C</a>
+                        <p class="preco-produto">Por: <data value="500.00">R$ 120,00</data></p>
                     </article>
                     <!-- Produto D com preço -->
-                    <article>
-                        <img src="produtoD.jpg" alt="imagem do produto D">
-                        <br><a href="#">Produto D</a>
-                        <p>Por: <data value="550.00">R$ 50,00</data></p>
+                    <article class="card-destaque">
+                        <img src="produtoD.jpg" alt="imagem do produto D" class="imagem-produto">
+                        <a href="#" class="nome-produto">Produto</a>
+                        <a href="#">Produto D</a>
+                        <p class="preco-produto">Por: <data value="550.00">R$ 50,00</data></p>
                     </article>
                     <!-- Produto E com preço -->
-                    <article>
-                        <img src="produtoE.jpg" alt="imagem do produto E">
-                        <br><a href="#">Produto E</a>
-                        <p>Por: <data value="600.00">R$ 60,99</data></p>
+                    <article class="card-destaque">
+                        <img src="produtoE.jpg" alt="imagem do produto E" class="imagem-produto">
+                        <a href="#" class="nome-produto">Produto</a>
+                        <a href="#">Produto E</a>
+                        <p class="preco-produto">Por: <data value="600.00">R$ 60,99</data></p>
                     </article>
                     <!-- Produto F com preço -->
-                    <article>
-                        <img src="produtoF.jpg" alt="imagem do produto F">
-                        <br><a href="#">Produto F</a>
-                        <p>Por: <data value="650.00">R$ 99,99</data></p>
-                    </article>
                 </div>
             </section>
             <!-- Seção de Produtos da Comunidade - Mostra produtos vendidos por membros das comunidades locais de Agru -->
@@ -142,22 +138,25 @@
                 <!-- Container para os produtos da comunidade -->
                 <div class="produtos">
                     <!-- Produto X com preço -->
-                    <article>
-                        <img src="produtoX.jpg" alt="imagem do produto X">
-                        <br><a href="#">Produto X</a>
-                        <p>Por: <data value="50.00">R$ 50,00</data></p>
+                    <article class="card-destaque">
+                        <img src="produtoX.jpg" alt="imagem do produto X" class="imagem-produto">
+                        <a href="#" class="nome-produto">Produto</a>
+                        <a href="#">Produto X</a>
+                        <p class="preco-produto">Por: <data value="50.00">R$ 50,00</data></p>
                     </article>
                     <!-- Produto Y com preço -->
-                    <article>
-                        <img src="produtoY.jpg" alt="imagem do produto Y">
-                        <br><a href="#">Produto Y</a>
-                        <p>Por: <data value="220.00">R$ 220,00</data></p>
+                    <article class="card-destaque">
+                        <img src="produtoY.jpg" alt="imagem do produto Y" class="imagem-produto">
+                        <a href="#" class="nome-produto">Produto</a>
+                        <a href="#">Produto Y</a>
+                        <p class="preco-produto">Por: <data value="220.00">R$ 220,00</data></p>
                     </article>
                     <!-- Produto Z com preço -->
-                    <article>
-                        <img src="produtoZ.jpg" alt="imagem do produto Z">
-                        <br><a href="#">Produto Z</a>
-                        <p>Por: <data value="15.00">R$ 15,00</data></p>
+                    <article class="card-destaque">
+                        <img src="produtoZ.jpg" alt="imagem do produto Z" class="imagem-produto">
+                        <a href="#" class="nome-produto">Produto</a>
+                        <a href="#">Produto Z</a>
+                        <p class="preco-produto">Por: <data value="15.00">R$ 15,00</data></p>
                     </article>
                 </div>
             </section>
