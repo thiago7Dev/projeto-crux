@@ -113,7 +113,7 @@ body {
     margin-top: 10px;
     border: 1px solid #ddd;
         border-radius: 8px;
-        padding: 1rem;
+        padding: 0.4rem;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -336,7 +336,7 @@ body {
 
 .nome-produto-comunidade {
     font-family: var(--fonte-sub-titulo);
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     color: var(--cor-texto);
     text-decoration: none;
     margin-bottom: 0.5rem;
@@ -361,3 +361,5 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* Estilização das ofertas especiais e dos serviços especializados */
