@@ -214,6 +214,7 @@ body {
     font-size: 0.9rem;
     color: #666;
     margin-bottom: 0.5rem;
+    text-decoration: none;
 }
 
 .preco-original {
@@ -286,7 +287,7 @@ body {
 .preco-produto {
     font-size: 1.2rem;
     color: var(--cor-principal);
-    font-weight: bold;
+    font-weight: bold;;
 }
 
 /* Responsividade */
