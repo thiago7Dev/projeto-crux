@@ -39,7 +39,7 @@ body {
 }
 
 .menu-topo {
-    background: var(--cor-fundo);
+    background: var(--cor-fundo-branco);
     display: flex;
     justify-content: space-between;
     align-items: center;
