@@ -69,7 +69,7 @@ body {
     flex-grow: 1;
     padding: 8px 12px;
     border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
+    border-radius: 90px 0 0 90px;
     outline: none;
 }
 
@@ -79,7 +79,7 @@ body {
     color: #fff;
     border: none;
     padding: 8px 16px;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 90px 90px 0;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -413,11 +413,11 @@ body {
 .oferta-item span,
 .servico-item button {
     font-family: var(--fonte-sub-titulo);
-    color: var(--cor-principal);
+    color: var(--cor-fundo-branco);
 }
 
 .servico-item button {
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-principal);
     border: none;
     padding: 8px 12px;
     border-radius: 4px;
@@ -426,7 +426,7 @@ body {
 }
 
 .servico-item button:hover {
-    background-color: var(--cor-principal);
+    background-color: #218838;
 }
 
 @media (max-width: 768px) {
@@ -481,7 +481,7 @@ body {
 }
 
 .btn-newsletter:hover {
-    background-color: var(--cor-secundaria);
+    background-color: #218838;
 }
 
 /* Responsividade da seção newsletter*/
