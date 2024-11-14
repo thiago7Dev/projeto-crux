@@ -560,3 +560,26 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+.swiper-container {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.card-oferta {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.imagem-produto {
+    max-width: 100%;
+    border-radius: 4px;
+}

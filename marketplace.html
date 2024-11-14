@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>AgruHUB - Marketplace</title>
         <link rel="stylesheet" href="marketplace.css">
+        <!-- Link para o CSS do Swiper -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     </head>
 
     <body>
@@ -27,7 +29,7 @@
             </div>
             <nav class="menu-nav">
                 <ul class="nav-lista">
-                    <li><a href="#" class="nav-item">Fertilizantes Especiais</a></li>
+                    <li><a href="#" class="nav-item">Fertilizantes especiais</a></li>
                     <li><a href="#" class="nav-item">Sementes</a></li>
                     <li><a href="#" class="nav-item">Ferramentas</a></li>
                     <li><a href="#" class="nav-item">Rações</a></li>
@@ -35,7 +37,7 @@
                     <li><a href="#" class="nav-item">Irrigação</a></li>
                     <li><a href="#" class="nav-item">Suprimentos</a></li>
                     <li><a href="#" class="nav-item">Produtos locais</a></li>
-                    <li><a href="#" class="nav-item">Serviços Especializados</a></li>
+                    <li><a href="#" class="nav-item">Serviços especializados</a></li>
                 </ul>
             </nav>
         </header>
@@ -44,91 +46,132 @@
             <!-- Seção de Melhores Ofertas - Mostra produtos com descontos especiais -->
             <section class="melhores-ofertas">
                 <h2 class="titulo-secao">Melhores Ofertas</h2>
-                <!-- Container para os produtos em oferta -->
-                <div class="grid-ofertas">
-                    <!-- Produto 1 com preço original e preço com desconto -->
-                    <article class="card-oferta">
-                        <img src="imagens/produtos/adubo_especial.png" alt="imagem do produto 1" class="imagem-produto">
-                        <a href="#" class="nome-produto">Adubo especial 15Kg</a>
-                        <p class="descricao-produto">Adubo orgânico sustentável que fortalece suas plantas e melhora a
-                            qualidade do solo.</p>
-                        <p class="preco-original"><del>De: AG$ 190,00</del></p>
-                        <p class="preco-promocional">Por: <data value="189.99">AG$ 189,99</data></p>
-                    </article>
-                    <!-- Produto 2 com preço original e preço com desconto -->
-                    <article class="card-oferta">
-                        <img src="imagens/produtos/planta.png" alt="imagem do produto 2" class="imagem-produto">
-                        <a href="#" class="nome-produto">Orquídea de Agrusil</a>
-                        <p class="descricao-produto">Muda da orquídea mais rara da região de Agrusil, foi cultivada no solo mais...</p>
-                        <p class="preco-original"><del>De: AG$ 180,00</del></p>
-                        <p class="preco-promocional">Por: <data value="150.00">AG$ 150,00</data></p>
-                    </article>
-                    <!-- Produto 3 com preço original e preço com desconto -->
-                    <article class="card-oferta">
-                        <img src="imagens/produtos/casca-arroz.png" alt="imagem do produto 3" class="imagem-produto">
-                        <a href="#" class="nome-produto">Casca de Orraz Carbonizada</a>
-                        <p class="descricao-produto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fug...</p>
-                        <p class="preco-original"><del>De: AG$ 250,00</del></p>
-                        <p class="preco-promocional">Por: <data value="200.00">AG$ 200,00</data></p>
-                    </article>
-                    <!-- Produto 4 com preço original e preço com desconto -->
-                    <article class="card-oferta">
-                        <img src="imagens/produtos/identificador.png" alt="imagem do produto 4" class="imagem-produto">
-                        <a href="#" class="nome-produto">Identificador</a>
-                        <p class="descricao-produto">Descrição curta do produto com detalhes...</p>
-                        <p class="preco-original"><del>De: AG$ 310,00</del></p>
-                        <p class="preco-promocional">Por: <data value="250.00">AG$ 250,00</data></p>
-                    </article>
-                    <!-- Produto 5 com preço original e preço com desconto -->
-                    <article class="card-oferta">
-                        <img src="imagens/produtos/serrote.png" alt="imagem produto 5" class="imagem-produto">
-                        <a href="#" class="nome-produto">Serrote de Poda Curvo</a>
-                        <p class="descricao-produto">Descrição curta do produto com detalhes...</p>
-                        <p class="preco-original"><del>De: AG$ 320,00</del></p>
-                        <p class="preco-promocional">Por: <data value="300.00">AG$ 300,00</data></p>
-                    </article>
-                    <!-- Produto 6 com preço original e preço com desconto -->
-                    <article class="card-oferta">
-                        <img src="imagens/produtos/exemplo.png" alt="imagem do produto 6" class="imagem-produto">
-                        <a href="#" class="nome-produto">Adubo especial 15Kg</a>
-                        <p class="descricao-produto">Adubo orgânico sustentável que fortalece suas plantas e melhora a
-                            qualidade do solo.</p>
-                        <p class="preco-original"><del>De: AG$ 190,00</del></p>
-                        <p class="preco-promocional">Por: <data value="189.99">AG$ 189,99</data></p>
-                    </article>
-                    <!-- Produto 7 com preço original e preço com desconto -->
-                    <article class="card-oferta">
-                        <img src="imagens/produtos/exemplo.png" alt="imagem do produto 7" class="imagem-produto">
-                        <a href="#" class="nome-produto">Orquídea de Agrusil</a>
-                        <p class="descricao-produto">Muda da orquídea mais rara da região de Agrusil, foi cultivada no solo mais...</p>
-                        <p class="preco-original"><del>De: AG$ 180,00</del></p>
-                        <p class="preco-promocional">Por: <data value="150.00">AG$ 150,00</data></p>
-                    </article>
-                    <!-- Produto 8 com preço original e preço com desconto -->
-                    <article class="card-oferta">
-                        <img src="imagens/produtos/exemplo.png" alt="imagem do produto 8" class="imagem-produto">
-                        <a href="#" class="nome-produto">Casca de Orraz Carbonizada</a>
-                        <p class="descricao-produto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fug...</p>
-                        <p class="preco-original"><del>De: AG$ 250,00</del></p>
-                        <p class="preco-promocional">Por: <data value="200.00">AG$ 200,00</data></p>
-                    </article>
-                    <!-- Produto 9 com preço original e preço com desconto -->
-                    <article class="card-oferta">
-                        <img src="imagens/produtos/exemplo.png" alt="imagem do produto 9" class="imagem-produto">
-                        <a href="#" class="nome-produto">Identificador</a>
-                        <p class="descricao-produto">Descrição curta do produto com detalhes...</p>
-                        <p class="preco-original"><del>De: AG$ 310,00</del></p>
-                        <p class="preco-promocional">Por: <data value="250.00">AG$ 250,00</data></p>
-                    </article>
-                    <!-- Produto 10 com preço original e preço com desconto -->
-                    <article class="card-oferta">
-                        <img src="imagens/produtos/exemplo.png" alt="imagem produto 10" class="imagem-produto">
-                        <a href="#" class="nome-produto">Serrote de Poda Curvo</a>
-                        <p class="descricao-produto">Descrição curta do produto com detalhes...</p>
-                        <p class="preco-original"><del>De: AG$ 320,00</del></p>
-                        <p class="preco-promocional">Por: <data value="300.00">AG$ 300,00</data></p>
-                    </article>
-                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Container para os produtos em oferta
+                        <div class="grid-ofertas"> -->
+                            <div class="swiper-slide">
+                                <!-- Produto 1 com preço original e preço com desconto -->
+                                <article class="card-oferta">
+                                    <img src="imagens/produtos/adubo_especial.png" alt="imagem do produto 1"
+                                        class="imagem-produto">
+                                    <a href="#" class="nome-produto">Adubo especial 15Kg</a>
+                                    <p class="descricao-produto">Adubo orgânico sustentável que fortalece suas plantas e melhora a qualidade do solo.</p>
+                                    <p class="preco-original"><del>De: AG$ 190,00</del></p>
+                                    <p class="preco-promocional">Por: <data value="189.99">AG$ 189,99</data></p>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- Produto 2 com preço original e preço com desconto -->
+                                <article class="card-oferta">
+                                    <img src="imagens/produtos/planta.png" alt="imagem do produto 2"
+                                        class="imagem-produto">
+                                    <a href="#" class="nome-produto">Orquídea de Agrusil</a>
+                                    <p class="descricao-produto">Muda da orquídea mais rara da região de Agrusil, foi cultivada no solo mais...</p>
+                                    <p class="preco-original"><del>De: AG$ 180,00</del></p>
+                                    <p class="preco-promocional">Por: <data value="150.00">AG$ 150,00</data></p>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- Produto 3 com preço original e preço com desconto -->
+                                <article class="card-oferta">
+                                    <img src="imagens/produtos/casca-arroz.png" alt="imagem do produto 3"
+                                        class="imagem-produto">
+                                    <a href="#" class="nome-produto">Casca de Orraz Carbonizada</a>
+                                    <p class="descricao-produto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fug...</p>
+                                    <p class="preco-original"><del>De: AG$ 250,00</del></p>
+                                    <p class="preco-promocional">Por: <data value="200.00">AG$ 200,00</data></p>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- Produto 4 com preço original e preço com desconto -->
+                                <article class="card-oferta">
+                                    <img src="imagens/produtos/identificador.png" alt="imagem do produto 4"
+                                        class="imagem-produto">
+                                    <a href="#" class="nome-produto">Identificador</a>
+                                    <p class="descricao-produto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fug...</p>
+                                    <p class="preco-original"><del>De: AG$ 310,00</del></p>
+                                    <p class="preco-promocional">Por: <data value="250.00">AG$ 250,00</data></p>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- Produto 5 com preço original e preço com desconto -->
+                                <article class="card-oferta">
+                                    <img src="imagens/produtos/serrote.png" alt="imagem produto 5"
+                                        class="imagem-produto">
+                                    <a href="#" class="nome-produto">Serrote de Poda Curvo</a>
+                                    <p class="descricao-produto">Descrição curta do produto com detalhes...</p>
+                                    <p class="preco-original"><del>De: AG$ 320,00</del></p>
+                                    <p class="preco-promocional">Por: <data value="300.00">AG$ 300,00</data></p>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- Produto 6 com preço original e preço com desconto -->
+                                <article class="card-oferta">
+                                    <img src="imagens/produtos/exemplo.png" alt="imagem do produto 6"
+                                        class="imagem-produto">
+                                    <a href="#" class="nome-produto">Adubo especial 15Kg</a>
+                                    <p class="descricao-produto">Adubo orgânico sustentável que fortalece suas plantas e
+                                        melhora a
+                                        qualidade do solo.</p>
+                                    <p class="preco-original"><del>De: AG$ 190,00</del></p>
+                                    <p class="preco-promocional">Por: <data value="189.99">AG$ 189,99</data></p>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- Produto 7 com preço original e preço com desconto -->
+                                <article class="card-oferta">
+                                    <img src="imagens/produtos/exemplo.png" alt="imagem do produto 7"
+                                        class="imagem-produto">
+                                    <a href="#" class="nome-produto">Orquídea de Agrusil</a>
+                                    <p class="descricao-produto">Muda da orquídea mais rara da região de Agrusil, foi
+                                        cultivada no solo mais...</p>
+                                    <p class="preco-original"><del>De: AG$ 180,00</del></p>
+                                    <p class="preco-promocional">Por: <data value="150.00">AG$ 150,00</data></p>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- Produto 8 com preço original e preço com desconto -->
+                                <article class="card-oferta">
+                                    <img src="imagens/produtos/exemplo.png" alt="imagem do produto 8"
+                                        class="imagem-produto">
+                                    <a href="#" class="nome-produto">Casca de Orraz Carbonizada</a>
+                                    <p class="descricao-produto">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Accusamus fug...</p>
+                                    <p class="preco-original"><del>De: AG$ 250,00</del></p>
+                                    <p class="preco-promocional">Por: <data value="200.00">AG$ 200,00</data></p>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- Produto 9 com preço original e preço com desconto -->
+                                <article class="card-oferta">
+                                    <img src="imagens/produtos/exemplo.png" alt="imagem do produto 9"
+                                        class="imagem-produto">
+                                    <a href="#" class="nome-produto">Identificador</a>
+                                    <p class="descricao-produto">Descrição curta do produto com detalhes...</p>
+                                    <p class="preco-original"><del>De: AG$ 310,00</del></p>
+                                    <p class="preco-promocional">Por: <data value="250.00">AG$ 250,00</data></p>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- Produto 10 com preço original e preço com desconto -->
+                                <article class="card-oferta">
+                                    <img src="imagens/produtos/exemplo.png" alt="imagem produto 10"
+                                        class="imagem-produto">
+                                    <a href="#" class="nome-produto">Serrote de Poda Curvo</a>
+                                    <p class="descricao-produto">Descrição curta do produto com detalhes...</p>
+                                    <p class="preco-original"><del>De: AG$ 320,00</del></p>
+                                    <p class="preco-promocional">Por: <data value="300.00">AG$ 300,00</data></p>
+                                </article>
+                            </div>
+
+                        </div>
+                        <!-- Adiciona botões de navegação do carrossel -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <!-- Adiciona a paginação do carrossel -->
+                        <div class="swiper-pagination"></div>
+                    </div>
             </section>
             <!-- Seção de Produtos em Destaque - Mostra os produtos mais populares e mais vendidos -->
             <section class="produtos-destaque">
@@ -192,10 +235,12 @@
                     </article>
                     <!-- Produto Y com preço -->
                     <article class="card-comunidade">
-                        <img src="imagens/produtos/monada-roxa.png" alt="imagem do produto Y" class="imagem-produto-comunidade">
+                        <img src="imagens/produtos/monada-roxa.png" alt="imagem do produto Y"
+                            class="imagem-produto-comunidade">
                         <a href="#" class="nome-produto-comunidade">Monada Roxa</a>
                         <br>
-                        <a href="#" class="descricao-produto-comunidade">Elemento especial da região de Agrusil que expande ao ser lançada, promovendo um efeito único de crescimento nas plantações.</a>
+                        <a href="#" class="descricao-produto-comunidade">Elemento especial da região de Agrusil que
+                            expande ao ser lançada, promovendo um efeito único de crescimento nas plantações.</a>
                         <p class="preco-produto">Por: <data value="220.00">AG$ 220,00</data></p>
                     </article>
                     <!-- Produto Z com preço -->
@@ -332,9 +377,28 @@
                 <p>Powered by Crux &copy; 2024 - Todos os direitos reservados.</p>
             </div>
         </footer>
+        <!-- Link para o JS do Swiper -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script>
-            // Função para exibir os produtos da seção melhores ofertas em um carrossel
-            
+            const swiper = new Swiper('.swiper-container', {
+                slidesPerView: 4, // Quantos produtos aparecem ao mesmo tempo
+                spaceBetween: 20, // Espaço entre os slides
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    // Responsividade
+                    320: { slidesPerView: 1 }, // Telas pequenas
+                    768: { slidesPerView: 2 }, // Tablets
+                    1024: { slidesPerView: 3 }, // Telas médias
+                    1200: { slidesPerView: 4 }, // Telas grandes
+                },
+            });
         </script>
     </body>
 
